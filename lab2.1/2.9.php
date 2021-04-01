@@ -12,20 +12,14 @@
 			print("<br>Your class is $class");
 			print("<br>Your university is $university");
 			print("<br>Your hobbies are:");
-			$hob1=$_POST["hob1"];
-			if($hob1=="yes") {print"<br><li>Photography </li>";}
-			$hob2=$_POST["hob2"];
-			if($hob2=="yes") print"<br><li>Listening Music </li>";
-			$hob3=$_POST["hob3"];
-			if($hob3=="yes") print"<br><li>Playing Soccer </li>";
-			$hob4=$_POST["hob4"];
-			if($hob4=="yes") print"<br><li>Watching Movie </li>";
-			$hob5=$_POST["hob5"];
-			if($hob5=="yes") print"<br><li>Cooking </li>";
-			$hob6=$_POST["hob6"];
-			if($hob6=="yes") print"<br><li>Running </li>";
+			if(isset($_POST["hob1"])) {print"<br><li>Photography </li>";}
+			if(isset($_POST["hob2"])) print"<br><li>Listening Music </li>";
+			if(isset($_POST["hob3"])) print"<br><li>Playing Soccer </li>";
+			if(isset($_POST["hob4"])) print"<br><li>Watching Movie </li>";
+			if(isset($_POST["hob5"])) print"<br><li>Cooking </li>";
+			if(isset($_POST["hob6"])) print"<br><li>Running </li>";
 			$other=$_POST["other"];
-			if($other!="other") print"<br><li>$other</li>";
+			if(isset($_POST["other"])) print"<br><li>$other</li>";
         ?>
     </body>
 </html>
