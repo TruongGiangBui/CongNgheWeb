@@ -19,7 +19,7 @@
 			if(isset($_POST["hob5"])) print"<br><li>Cooking </li>";
 			if(isset($_POST["hob6"])) print"<br><li>Running </li>";
 			$other=$_POST["other"];
-			if(isset($_POST["other"])) print"<br><li>$other</li>";
+			if($_POST["other"]!="") print"<br><li>$other</li>";
         ?>
     </body>
 </html>
