@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<title>
+			Validate form
+		</title>
+	</head>
+	<body>
+		<form name="myform">
+			Name: <input name="name" type="text">
+			Email: <input name="email" type="email">
+			Tel: <input name="tel" type="text">
+			<input type="submit" onclick=send()>
+		</form>
+		<div id="content">
+
+		</div>
+		<script>
+			function send()
+			{
+				if(document.myform.name.value.trim()=="") alert("Enter your name");
+				else if(document.myform.email.value.trim()=="") alert("Enter your email")
+				else if (document.myform.tel.value.trim()=="") alert("Enter your phone number")
+				else if(!document.myform.tel.value.trim().match(/^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g)) alert("Wrong phone number")
+				else{
+					alert("Name: "+document.myform.name.value+
+					"\nEmail: "+document.myform.email.value+
+					"\nTel: "+document.myform.tel.value)
+				}
+			}
+		</script>
+	</body>
+</html>
