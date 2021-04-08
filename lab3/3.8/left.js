@@ -10,7 +10,7 @@ function display()
 			document.getElementById("content").innerText = unescape(localStorage.getItem("content"));
 		}
 	}
-	else alert("You don't recently blog");
+	else document.getElementById("title").innerText="You don't recently blog";
 }
 display();
 
