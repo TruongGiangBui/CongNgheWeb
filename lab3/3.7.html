@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Color links</title>
+        <script>
+            function changeColor(x,color) {
+                document.getElementById(x).style.color = color;
+                
+            }
+
+            function normal(x) {
+                document.getElementById(x).style.color='';
+            }
+        </script> 
+    </head>
+    <body>
+        
+        <p>
+            <a style="color: red " type="text/css" onmouseover="changeColor('1','red')" onmouseout="normal(1)" href=""> This is link 1 </a>
+        </p>
+        <p id ="1">
+            Here are some texts
+        </p>
+        <p><a style="color: green " type="text/css" onmouseover="changeColor('2','green')" onmouseout="normal(2)" href=""> This is link 2 </a></p>
+        <p id ="2">
+            Here are some texts
+        </p>
+        <p><a style="color: blue " type="text/css" onmouseover="changeColor('3','blue')" onmouseout="normal(3)" href=""> This is link 3 </a></p>
+        <p id ="3">
+            Here are some texts
+        </p>
+        
+       
+    </body>
+</html>
