@@ -1,5 +1,6 @@
 function display()
 {
+	document.getElementById("title").innerText="You don't recently blog";
 	if (localStorage.getItem("title") != null) {
 		time = new Date().getTime();
 		setuptime = localStorage.getItem("time");
@@ -10,7 +11,6 @@ function display()
 			document.getElementById("content").innerText = unescape(localStorage.getItem("content"));
 		}
 	}
-	else document.getElementById("title").innerText="You don't recently blog";
 }
 display();
 
