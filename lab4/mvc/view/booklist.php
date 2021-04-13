@@ -10,9 +10,9 @@
 				</tr>
 			</tbody>
 			<?php
-			foreach($book as $title=>$book)
+			foreach($books as $title=>$books)
 			{
-				echo '<tr><td><a href="index.php?b'.$book->title.'">'.$book->title.'</a></td><td>'.$book->author.'</td><td>'.$book->description.'</td></tr>';
+				echo '<tr><td><a href="index.php?b'.$books->title.'">'.$books->title.'</a></td><td>'.$books->author.'</td><td>'.$books->description.'</td></tr>';
 			}
 			?>
 		</table>

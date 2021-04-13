@@ -10,11 +10,12 @@ class Controller{
 	{
 		if(!isset($_GET['book']))
 		{
-			$book=$this->model->getBookList();
+			$books=$this->model->getBookList();
 			include 'view/booklist.php';
 		}
 		else{
 			$book=$this->model->getBook($_GET['book']);
+			echo '<p>'.$book->title.'</p>';
 			include 'view/viewbook.php';
 		}
 	}
