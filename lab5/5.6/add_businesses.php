@@ -81,7 +81,7 @@ Click on one or control click on multiple catetories <br /><br />
 	</div>
 </div>
 <div class="right">
-	<form name="myForm" id="myForm" action="add_biz.php" method="POST">
+	<form name="myForm" id="myForm" action="add_businesses.php" method="POST">
 		<table id="table-right">
 		<tr>
 			<td>Business name</td>
