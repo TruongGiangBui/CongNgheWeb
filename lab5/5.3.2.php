@@ -17,7 +17,7 @@
 				$Cost = (int)$_POST["Cost"];
 				$Weight = (int)$_POST["Weight"];
 				$Numb = (int)$_POST["NumberAvailable"];
-				$SQLcmd = "INSERT INTO Products (Product_desc, Cost, Weight, Numb)
+				$SQLcmd = "INSERT INTO $table_name (Product_desc, Cost, Weight, Numb)
 				VALUES ('$Product_desc', $Cost, $Weight, $Numb)";
 				if (mysqli_query($conn, $SQLcmd)) {
 					echo "New record created successfully";

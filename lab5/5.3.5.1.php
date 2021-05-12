@@ -24,7 +24,7 @@
 						echo "<br>";
 					}
 					echo "<input type='submit' value='Click to Submit'>";
-        			echo "<input type='reset' value='Reset'>";
+					echo "<input type='reset' value='Reset'>";
 					echo "</form>";
 				}
 					

@@ -20,39 +20,39 @@
 		}
 
 		.gridview .selected, .gridview tbody .selected {
-		    background-color: black;
-		    color: #fff;
+			background-color: black;
+			color: #fff;
 		}
 	</style>
 	<script type="text/javascript">
 		function toggleClass(el, className) {
 			let id = el.id.toString();
-		    if (el.className.indexOf(className) >= 0) {
-		        el.className = el.className.replace(className,"");
+			if (el.className.indexOf(className) >= 0) {
+				el.className = el.className.replace(className,"");
 
-		        let arr = document.getElementById("category").value.split(" ");
+				let arr = document.getElementById("category").value.split(" ");
 
-		        const se = new Set(arr);
-		        se.delete(id);
-		        document.getElementById("category").value = "";
-		        for(const x of se){
-		        	document.getElementById("category").value += " " + x.toString();
-		        	console.log(x);
-		        }
-		    }
-		    else {
-		        el.className  += className;
-		        document.getElementById("category").value += " " + id;
-		        let arr = document.getElementById("category").value.split(" ");
+				const se = new Set(arr);
+				se.delete(id);
+				document.getElementById("category").value = "";
+				for(const x of se){
+					document.getElementById("category").value += " " + x.toString();
+					console.log(x);
+				}
+			}
+			else {
+				el.className  += className;
+				document.getElementById("category").value += " " + id;
+				let arr = document.getElementById("category").value.split(" ");
 
-		        const se = new Set(arr);
-		        document.getElementById("category").value = "";
-		        for(const x of se){
-		        	document.getElementById("category").value += " " + x.toString();
-		        	console.log(x);
-		        }
+				const se = new Set(arr);
+				document.getElementById("category").value = "";
+				for(const x of se){
+					document.getElementById("category").value += " " + x.toString();
+					console.log(x);
+				}
 
-		    }
+			}
 		}
 	</script>
 </head>
